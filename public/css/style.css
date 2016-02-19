@@ -1,15 +1,27 @@
 /* Layout Page */
 
+/*color codes
+lightest green: f9fdb4
+dark green: 939c00
+lime green: d4ea00
+right red: ed3800
+light red fba180
+;
+*/
+
 body {
+  background-color: #f9fdb4;
   margin: 0;
   padding: 0;
+  color: #ed3800;
 }
    /* Side Bar */
 .side-bar {
+
   position: fixed;
   height: 100%;
   width: 225px;
-  background-color: #cccccc;
+  background-color: #d4ea00;
 }
 
 nav {
@@ -53,7 +65,7 @@ header {
   width: auto;
   height: 150px;
   margin-left: 225px;
-  background-color: #dddddd;
+  background-color: #d4ea00;
 }
 
 .logo {
@@ -108,7 +120,7 @@ footer {
   width: auto;
   height: 100%;
   margin-left: 225px;
-  background-color: #eeeeee
+  background-color: #f9fdb4;
 }
 
 /*Home Page*/
@@ -142,6 +154,8 @@ footer {
 /* Bill's Pages */
 h2{
   text-align: center;
+  margin-top: 0;
+  padding-top: 10px;
 }
 button{
   border-radius: 8px;
@@ -150,7 +164,7 @@ button{
   color: white;
 }
 #submitForm{
-    border-radius: 8px;
+  border-radius: 8px;
   font-size: 24px;
   background-color: #f44336;
   color: white;
@@ -182,12 +196,13 @@ button{
  /* left: 230px;*/
 /*  top: 300px;*/
   width: 80%;
+  padding-left: 10px;
 }
 .contactC{
     position: relative;
 /*  left: 230px;*/
-  top: 200px;
+  top: 100px;
   width: 80%;
   text-align: center;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }

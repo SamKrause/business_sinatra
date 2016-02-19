@@ -1,0 +1,139 @@
+/* Layout Page */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+   /* Side Bar */
+.side-bar {
+  position: fixed;
+  height: 100%;
+  width: 225px;
+  background-color: #cccccc;
+}
+
+nav {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  margin-bottom: 5px;
+  background-color: #aaaaaa;
+  width: 70px;
+  text-indent: 5px;
+  color:white;
+  text-decoration: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+nav a a:link {
+  color: white
+}
+
+nav a:hover {
+  background-color: black;
+}
+
+nav a:active {
+  background-color: black;
+}
+
+#current-link {
+  background-color: black;
+}
+
+    /* Header */
+header {
+  width: auto;
+  height: 150px;
+  margin-left: 225px;
+  background-color: #dddddd;
+}
+
+.logo {
+  float: left;
+  height: 130px;
+  width: 160px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+header h1 {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 125px;
+  font-size: 40px
+}
+
+header h3 {
+  display: inline;
+  margin-top: 20px;
+  margin-left: 125px;
+}
+
+    /* Footer */
+footer {
+  width: auto;
+  height: 150px;
+  margin-left: 225px;
+  background-color: #dddddd;
+}
+
+#nav-footer {
+  display: inline-block;
+  position: relative;
+  top: 25px;
+  margin-left: 25px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+#nav-footer a {
+  color: white;
+  font-size: 5em;
+  margin: auto 25px;
+}
+
+    /* Main Container*/
+#main-container {
+  width: auto;
+  height: 100%;
+  margin-left: 225px;
+  background-color: #eeeeee
+}
+
+/*Home Page*/
+.recipe-column ul {
+  margin-bottom: 0;
+}
+
+.home-wrapper {
+  height: auto;
+  width: auto;
+}
+
+.home-wrapper p {
+  position: relative;
+
+}
+
+#home-img {
+  float: left;
+  height: 200px;
+  width: 350px;
+}
+
+#clear-fix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}

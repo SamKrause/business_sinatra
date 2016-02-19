@@ -25,7 +25,7 @@ button{
 }
 .productContainer{
   position: relative;
-  left: 230px;
+  /*left: 230px;*/
   width: 80%;
   background-color: yellow;
   display: inline-flex;
@@ -45,14 +45,14 @@ button{
 }
 .contactContainer{
   position: relative;
-  left: 230px;
-  top: 300px;
+ /* left: 230px;*/
+/*  top: 300px;*/
   width: 80%;
 }
 .contactC{
     position: relative;
-  left: 230px;
-  top: 400px;
+/*  left: 230px;*/
+  top: 200px;
   width: 80%;
   text-align: center;
   margin-bottom: 100px;

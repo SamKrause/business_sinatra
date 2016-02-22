@@ -13,11 +13,11 @@ body {
   background-color: #f9fdb4;
   margin: 0;
   padding: 0;
-  color: #ed3800;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: 1.2em;
 }
    /* Side Bar */
 .side-bar {
-
   position: fixed;
   height: 100%;
   width: 225px;
@@ -26,7 +26,7 @@ body {
 
 nav {
   position: relative;
-  top: 20px;
+  top: 50px;
   left: 10px;
   display: -webkit-flex;
   display: flex;
@@ -34,29 +34,17 @@ nav {
 }
 
 nav a {
-  margin-bottom: 5px;
-  background-color: #aaaaaa;
-  width: 70px;
+  margin-bottom: 40px;
   text-indent: 5px;
   color:white;
   text-decoration: none;
   padding-top: 2px;
   padding-bottom: 2px;
-}
-
-nav a a:link {
-  color: white
+  font-size: 2.5em;
+  width: 90%;
 }
 
 nav a:hover {
-  background-color: black;
-}
-
-nav a:active {
-  background-color: black;
-}
-
-#current-link {
   background-color: black;
 }
 
@@ -115,6 +103,13 @@ footer {
   margin: auto 25px;
 }
 
+.jvm-logo {
+  height: 75px;
+  width: 200px;
+  margin: auto;
+  padding-top: 25px;
+}
+
     /* Main Container*/
 #main-container {
   width: auto;
@@ -128,27 +123,188 @@ footer {
   margin-bottom: 0;
 }
 
-.home-wrapper {
-  height: auto;
+.home-wrapper-1 {
+  height: 320px;
   width: auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#first-p {
-  position: relative;
+.home-flex-column {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.home-flex-column p {
   margin-top: 0;
-  padding-top: 50px;
+  text-indent: 50px;
 }
 
 #home-img {
-  float: left;
   height: 300px;
   width: 500px;
 }
 
-#clear-fix:after {
-  content: " ";
-  display: table;
-  clear: both;
+.home-wrapper-2 {
+  height: 320px;
+  width: auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-directsion: row;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-wrapper-2 h4 {
+  margin-bottom: 10px;
+}
+.home-wrapper-2 ul {
+  list-style-type: none;
+  position: relative;
+  right: 30px;
+  margin-top: 10px;
+}
+
+.home-wrapper-3 {
+  height: 320px;
+  width: auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-directsion: row;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-wrapper-4 {
+  height: 500px;
+  width: auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-directsion: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-wrapper-5 {
+  height: 600px;
+  width: auto;
+  padding: 30px 30px;
+}
+
+.home-wrapper-5 h2 {
+  margin: 0;
+  text-align: center;
+}
+
+#recipe-wrapper {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-directsion: row;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recipe-column {
+  text-align: center;
+  align-self: flex-start;
+  color: black;
+}
+
+.recipe-list {
+  text-align: left;
+}
+
+.modal-link {
+  text-decoration: none;
+  color: black;
+}
+
+.recipe-img {
+  width: 250px;
+  height: 150px;
+  margin-top: 30px;
+}
+
+      /* Modal */
+#outer-box {
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  display: none;
+}
+
+#inner-box {
+  text-align: center;
+  background-color: white;
+  border: 1em solid black;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#modal-appear {
+
+}
+
+.recipe-modal {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#modal {
+  display: none;
+}
+
+.recipe-modal .recipe-list {
+  font-size: .7em;
+}
+
+.recipe-modal img {
+  width: 250px;
+  height: 150px;
+}
+
+.modal-heading {
+  margin-top:0;
+  margin-bottom: 10px;
+}
+
+/* About Page */
+
+.about-wrapper {
+  height: 320px;
+  width: auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-directsion: row;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-flex-column {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#about-img {
+  height: 300px;
+  width: 500px;
 }
 
 /* Bill's Pages */

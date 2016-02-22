@@ -8,12 +8,7 @@ $(document).ready(function(){
    $('#products').click(function(){
      $('.productBox').slideDown("slow")
    })
-
-
-
-
  }
-
 
 
 

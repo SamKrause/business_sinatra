@@ -16,3 +16,21 @@ end
 get "/products" do
   erb :products
 end
+
+client = SendGrid::Client.new do |c|
+  c.api_key = ENV['SENDGRID_API_KEY']
+end
+
+post '/submit' do
+  @content = params["comment"]
+  mail = SendGrid::Mail.new do |m|
+   m.to = 'zerega85@gmail.com'
+   m.from = 'zerega85@gmail.com'
+   m.subject = "website correspondance"
+   m.text = @content
+end
+
+response = client.send(mail)
+end
+
+

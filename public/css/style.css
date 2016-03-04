@@ -107,6 +107,11 @@ footer {
   color: white;
   font-size: 5em;
   margin: auto 25px;
+  z-index: 1;
+}
+
+#nav-footer a i {
+  z-index: 1;
 }
 
 .jvm-logo {
@@ -251,6 +256,7 @@ footer {
   height: 100%;
   background-color: rgba(0,0,0,.5);
   display: none;
+  z-index: 100;
 }
 
 #inner-box {
@@ -261,6 +267,7 @@ footer {
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+  z-index: 200;
 }
 
 .recipe-modal {
@@ -268,10 +275,6 @@ footer {
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
-}
-
-#modal {
-  display: none;
 }
 
 .recipe-modal .recipe-list {

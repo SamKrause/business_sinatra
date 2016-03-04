@@ -17,6 +17,18 @@ get "/products" do
   erb :products
 end
 
+get "/ragu" do
+   erb :ragu, :layout => false
+end
+
+get "/ziti" do
+   erb :ziti, :layout => false
+end
+
+get "/lasagna" do
+   erb :lasagna, :layout => false
+end
+
 client = SendGrid::Client.new do |c|
   c.api_key = ENV['SENDGRID_API_KEY']
 end
